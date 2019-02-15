@@ -1,0 +1,44 @@
+table{
+	overflow-x: scroll;
+	border-collapse: collapse;
+	/*width: 100%;*/
+	table-layout: fixed;
+}
+
+tr{
+	overflow-x: auto;
+}
+
+#add-fab, #add-fab2, #add-fab3{
+	position: fixed;
+	bottom:25px;
+  	right:25px;
+}
+
+.foot{
+	text-align: center;
+	padding: 10px;
+}
+
+body{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main{
+	flex: 1 0 auto;
+}
+
+.top{
+	margin-top: 30px;
+}
+
+.med{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+textarea{
+	overflow-y: scroll;
+}
