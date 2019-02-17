@@ -38,7 +38,7 @@
 				<label for="keterangan" class="mdl-textfield__label">Keterangan</label>
 			</div>
 
-			<div class="mdl-card__actions mdl-card--border">
+			<div class="mdl-card__actions mdl-card--border" style="text-align: center;">
 				<button type="submit" name="add" class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">Add</button>
 			</div>
 		</form>

@@ -92,7 +92,7 @@
 						<label class="mdl-textfield__label" for="av">AV</label>
 					</div>
 
-					<div class="mdl-card__actions mdl-card--border">
+					<div class="mdl-card__actions mdl-card--border" style="text-align: center;">
 						<button class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect" type="reset">Reset</button>
 					
 						<button type="submit" name="add" class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">Add</button>

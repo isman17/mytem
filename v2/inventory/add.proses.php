@@ -5,13 +5,13 @@
 	require '../foot.php';
 	require_once '../db.php';
 	if (isset($_REQUEST['add'])) {
-		$nama		= stripcslashes($_REQUEST['nama']);
+		$nama		= stripcslashes(trim($_REQUEST['nama']));
 		$nama		= mysqli_escape_string($db, $nama);
-		$jenis		= stripcslashes($_REQUEST['jenis']);
+		$jenis		= stripcslashes(trim($_REQUEST['jenis']));
 		$jenis		= mysqli_escape_string($db, $jenis);
-		$jumlah		= stripcslashes($_REQUEST['jumlah']);
+		$jumlah		= stripcslashes(trim($_REQUEST['jumlah']));
 		$jumlah		= mysqli_escape_string($db, $jumlah);
-		$keterangan	= stripcslashes($_REQUEST['keterangan']);
+		$keterangan	= stripcslashes(trim($_REQUEST['keterangan']));
 		$keterangan	= mysqli_escape_string($db, $keterangan);
 		if ($keterangan == '') {
 			$keterangan = '-';

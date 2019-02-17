@@ -47,6 +47,6 @@
 	</div>
 	
 </div>
-<br><br><br><br>
+<br><br><br>
 
 <main class="mdl-layout__content">

@@ -13,7 +13,7 @@
 
 <div class="mdl-grid center-items">
 <div class="mdl-layout-spacer"></div>
-	<table class="mdl-data-table mdl-data-table--selectable mdl-js-data-table mdl-shadow--8dp">
+	<table class="mdl-data-table mdl-data-table--selectable mdl-js-data-table mdl-shadow--8dp tablei">
 		<thead>
 			<tr>
 				<th class="mdl-data-table__cell--non-numeric">NO</th>
@@ -30,10 +30,10 @@
 	if ($result > 0) {
 		while ($row = mysqli_fetch_assoc($tampil)) {
 			echo "<tr>
-					<td>". $row['id'] ."</td>
+					<td style='text-align:center !important;'>". $row['id'] ."</td>
 					<td>". $row['nama'] ."</td>
 					<td>". $row['jenis'] ."</td>
-					<td>". $row['jumlah'] ."</td>
+					<td style='text-align:center !important;'>". $row['jumlah'] ."</td>
 					<td>". $row['keterangan'] ."</td>
 					<td>". $row['kondisi'] ."</td>
 					<td>
@@ -42,10 +42,11 @@
 							<a href='delete?id=". $row['id'] ."' style='color:red;'><i class='material-icons'>delete</i>
 						</form>
 					</td>
+				  </tr>
 				 ";
 		}
 	}else{
-		echo "<tr><td colspan='7'>Tidak Ada Data</td></tr>";
+		echo "<tr><td colspan='7' style='text-align:center !important;'>Tidak Ada Data</td></tr>";
 	}
 ?>
 

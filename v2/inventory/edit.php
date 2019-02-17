@@ -48,7 +48,7 @@
 					<label class="mdl-textfield__label" for="kondisi">Kondisi</label>
 				</div>
 
-				<div class="mdl-card__actions mdl-card--border">
+				<div class="mdl-card__actions mdl-card--border" style="text-align: center;">
 					<button type="submit" name="update" class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">Update</button>
 				</div>
 			</form>

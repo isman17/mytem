@@ -13,7 +13,7 @@
 
 <div class="mdl-grid center-items">
 <div class="mdl-layout-spacer"></div>
-	<table class="mdl-data-table mdl-data-table--selectable mdl-js-data-table mdl-shadow--8dp">
+	<table class="mdl-data-table mdl-data-table--selectable mdl-js-data-table mdl-shadow--8dp tablei">
 		<thead>
 			<tr>
 				<th class="mdl-data-table__cell--non-numeric">NO</th>
@@ -24,7 +24,7 @@
 				<th class="mdl-data-table__cell--non-numeric">SOLUSI</th>
 				<th class="mdl-data-table__cell--non-numeric">KETERANGAN</th>
 				<th class="mdl-data-table__cell--non-numeric">STATUS</th>
-				<th class="fixed">ACTION</th>
+				<th class="fix-col">ACTION</th>
 			</tr>
 		</thead>
 
@@ -32,22 +32,23 @@
 	if ($result > 0) {
 		while ($row = mysqli_fetch_assoc($tampil)) {
 			echo "<tr>
-					<td>". $row['id'] ."</td>
+					<td style='text-align:center !important;'>". $row['id'] ."</td>
 					<td>". $row['divisi'] ."</td>
 					<td>". $row['nama'] ."</td>
 					<td>". $row['no_hp'] ."</td>
 					<td>". $row['masalah'] ."</td>
 					<td>". $row['solusi'] ."</td>
 					<td>". $row['keterangan'] ."</td>
-					<td>". $row['status'] ."</td>
-					<td>
+					<td style='text-align:center !important;'>". $row['status'] ."</td>
+					<td class='fix-col'>
 						<a href='edit?id=". $row['id'] ."' style='color:green;'><i class='material-icons'>edit</i>
 						<a href='delete?id=". $row['id'] ." 'style='color:red;'><i class='material-icons'>delete</i>	
 					</td>
+				  </tr>
 				 ";
 		}
 	}else{
-		echo "<tr><td colspan='9'>Tidak Ada Data</td></tr>";
+		echo "<tr><td colspan='9' style='text-align:center !important;'>Tidak Ada Data</td></tr>";
 	}
 ?>
 	</table>

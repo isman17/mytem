@@ -10,7 +10,7 @@
 
 <div class="mdl-grid center-items">
 	<div class="mdl-layout-spacer"></div>
-	<div class="mdl-card mdl-shadow--8dp">
+	<div class="mdl-card mdl-shadow--8dp" style="border-radius: 5px; margin:5%;">
 		<div class="mdl-card__title mdl-color--primary mdl-color-text--white">SignIn Here !</div>
 		<div class="mdl-card__supporting-text">
 
@@ -25,8 +25,8 @@
 					<label class="mdl-textfield__label" for="pass">Password</label>
 				</div>
 
-				<div class="mdl-card__actions mdl-card--border">
-					<button class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" type="submit" name="signin">SignIn</button>
+				<div class="mdl-card__actions mdl-card--border" style="text-align: center;">
+					<button class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect" type="submit" name="signin">SignIn</button>
 				</div>
 			</form>	
 

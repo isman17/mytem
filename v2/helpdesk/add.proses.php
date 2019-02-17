@@ -5,15 +5,15 @@
 	require '../foot.php';
 	require_once '../db.php';
 	if (isset($_REQUEST['add'])) {
-		$divisi		=	stripcslashes($_REQUEST['divisi']);
+		$divisi		=	stripcslashes(trim($_REQUEST['divisi']));
 		$divisi		=	mysqli_escape_string($db, $divisi);
-		$nama		=	stripcslashes($_REQUEST['nama']);
+		$nama		=	stripcslashes(trim($_REQUEST['nama']));
 		$nama		=	mysqli_escape_string($db, $nama);
-		$no_hp		=	stripcslashes($_REQUEST['no_hp']);
+		$no_hp		=	stripcslashes(trim($_REQUEST['no_hp']));
 		$no_hp		=	mysqli_escape_string($db, $no_hp);
-		$masalah	=	stripcslashes($_REQUEST['masalah']);
+		$masalah	=	stripcslashes(trim($_REQUEST['masalah']));
 		$masalah	=	mysqli_escape_string($db, $masalah);
-		$keterangan	=	stripcslashes($_REQUEST['keterangan']);
+		$keterangan	=	stripcslashes(trim($_REQUEST['keterangan']));
 		$keterangan	=	mysqli_escape_string($db, $keterangan);
 		if ($keterangan == '') {
 			$keterangan = '-';

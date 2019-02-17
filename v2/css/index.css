@@ -1,23 +1,29 @@
-table{
-	overflow-x: scroll;
-	border-collapse: collapse;
-	/*width: 100%;*/
-	table-layout: fixed;
+.mdl-mini-footer{
+	text-align: center !important;
 }
 
-tr{
-	overflow-x: auto;
+.fix-col{
+	overflow-x: none;
+}
+
+.mdl-data-table th {
+text-align:center !important;
+}
+
+.mdl-data-table td {
+text-align:left !important;
+}
+
+.tablei{
+	overflow-x: auto; 
+	max-width: 100%; 
+	display: block;
 }
 
 #add-fab, #add-fab2, #add-fab3{
 	position: fixed;
 	bottom:25px;
   	right:25px;
-}
-
-.foot{
-	text-align: center;
-	padding: 10px;
 }
 
 body{

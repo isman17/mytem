@@ -3,7 +3,7 @@
 	require_once '../db.php';
 	$id = $_GET['id'];
 	
-	$qdel 	= "DELETE FROM tb_inventory WHERE id='$id'";
+	$qdel 	= "DELETE FROM tb_ticket WHERE id='$id'";
 	$del  	= mysqli_query($db, $qdel);
 	if ($del) {
 		echo "<script language=javascript>

@@ -3,7 +3,7 @@
 <div class="mdl-grid center-items">
 	<div class="mdl-layout-spacer"></div>
 	<div></div>
-	<div class="mdl-card mdl-shadow--6dp">
+	<div class="mdl-card mdl-shadow--6dp" style="border-radius: 5px; margin:5%;">
 		<div class="mdl-card__title mdl-color--primary mdl-color-text--white">SignUp Here !</div>
 		<div class="mdl-card__supporting-text">
 
@@ -40,9 +40,9 @@
 						<input id="pass" class="mdl-textfield__input" type="password" name="pass2">
 					</div> -->
 
-					<div class="mdl-card__actions mdl-card--border">
-						<button type="reset" class="mdl-button mdl-js-button mdl-button--colored">Reset</button>
-						<button type="submit" class="mdl-button mdl-js-button mdl-button--colored" name="signup">SignUp</button>
+					<div class="mdl-card__actions mdl-card--border" style="text-align: center;">
+						<button type="reset" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Reset</button>
+						<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" name="signup">SignUp</button>
 					</div>
 			</form>
 

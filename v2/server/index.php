@@ -13,7 +13,7 @@
 
 <div class="mdl-grid center-items">
 	<div class="mdl-layout-spacer"></div>
-	<table class="mdl-data-table mdl-data-table--selectable mdl-js-data-table mdl-shadow--8dp">
+	<table class="mdl-data-table mdl-data-table--selectable mdl-js-data-table mdl-shadow--8dp tablei">
 		<thead>
 			<tr>
 				<th class="mdl-data-table__cell--non-numeric">NO</th>
@@ -43,20 +43,20 @@
 	if ($result > 0) {
 		while ($row = mysqli_fetch_assoc($cek)) {
 			echo "<tr>
-					<td>". $row['id'] ."</td>
+					<td style='text-align:center !important;'>". $row['id'] ."</td>
 					<td>". $row['ilo'] ."</td>
 					<td>". $row['ip'] ."</td>
 					<td>". $row['mac'] ."</td>
 					<td>". $row['host'] ."</td>
 					<td>". $row['app'] ."</td>
-					<td>". $row['kvm'] ."</td>
-					<td>". $row['rak'] ."</td>
-					<td>". $row['norak'] ."</td>
+					<td style='text-align:center !important;'>". $row['kvm'] ."</td>
+					<td style='text-align:center !important;'>". $row['rak'] ."</td>
+					<td style='text-align:center !important;'>". $row['norak'] ."</td>
 					<td>". $row['sn'] ."</td>
 					<td>". $row['type'] ."</td>
-					<td>". $row['ram'] ."</td>
+					<td style='text-align:center !important;'>". $row['ram'] ."</td>
 					<td>". $row['proci'] ."</td>
-					<td>". $row['hdd'] ."</td>
+					<td style='text-align:center !important;'>". $row['hdd'] ."</td>
 					<td>". $row['nic'] ."</td>
 					<td>". $row['os'] ."</td>
 					<td>". $row['domain'] ."</td>
@@ -71,7 +71,7 @@
 				 ";
 		}
 	}else{
-		echo "<tr><td colspan='19'>NO DATA</td></tr>";
+		echo "<tr><td colspan='19' style='text-align:center !important;'>NO DATA</td></tr>";
 	}
 
 ?>

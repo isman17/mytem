@@ -4,13 +4,13 @@
 	require_once '../db.php';
 	if (isset($_REQUEST['update'])) {
 		$id			= $_REQUEST['id'];
-		$masalah	= stripcslashes($_REQUEST['masalah']);
+		$masalah	= stripcslashes(trim($_REQUEST['masalah']));
 		$masalah	= mysqli_escape_string($db, $masalah);
-		$solusi		= stripcslashes($_REQUEST['solusi']);
+		$solusi		= stripcslashes(trim($_REQUEST['solusi']));
 		$solusi		= mysqli_escape_string($db, $solusi);
-		$keterangan	= stripcslashes($_REQUEST['keterangan']);
+		$keterangan	= stripcslashes(trim($_REQUEST['keterangan']));
 		$keterangan	= mysqli_escape_string($db, $keterangan);
-		$status		= stripcslashes($_REQUEST['status']);
+		$status		= stripcslashes(trim($_REQUEST['status']));
 		$status		= mysqli_escape_string($db, $status);
 		$time		= date("Y-m-d H:i:s");
 

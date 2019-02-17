@@ -2,7 +2,7 @@
 	date_default_timezone_set("Asia/Jakarta");
 	require 'head.php';
 	require_once 'db.php';
-	if ($_REQUEST['signup']) {
+	if (isset($_REQUEST['signup'])) {
 		$nama	= stripcslashes(htmlentities($_REQUEST['nama']));
 		$nama	= mysqli_escape_string($db, $nama);
 		// $pass1	= stripcslashes(htmlentities($_REQUEST['pass1']));

@@ -42,9 +42,7 @@
 				</div>
 
 				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-					<textarea class="mdl-textfield__input" name="solusi" id="solusi" class="mdl-textfield__input" required>
-						<?php echo $row['solusi'] ?>
-					</textarea>
+					<textarea class="mdl-textfield__input" name="solusi" id="solusi" class="mdl-textfield__input" required><?php echo $row['solusi'] ?></textarea>
 					<label class="mdl-textfield__label" for="solusi">Solusi</label>
 				</div>
 
@@ -62,7 +60,7 @@
 					<label class="mdl-textfield__label" for="status">Status</label>
 				</div>
 				
-				<div class="mdl-card__actions mdl-card--border">
+				<div class="mdl-card__actions mdl-card--border" style="text-align: center;">
 					<button type="submit" name="update" class="mdl-button mdl-button--raised mdl-js-button mdl-js-ripple-effect">Update</button>
 				</div>
 			</form>
