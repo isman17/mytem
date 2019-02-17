@@ -3,10 +3,20 @@
 <head>
 	<title>MyTem</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="msapplication-TileColor" content="#9C27B0">
+	<meta name="theme-color" content="#9C27B0">
+	<link rel="apple-touch-icon" sizes="180x180" href="v2/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="v2/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="v2/img/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="v2/img/safari-pinned-tab.svg" color="#5bbad5">
 	<link rel="icon" type="image/png" href="img/favicon-32x32.png">
+	<link rel="mask-icon" href="v2/img/safari-pinned-tab.svg" color="#5bbad5">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-	<link rel="stylesheet" type="text/css" href="css/material.min.purple.css">
+	<link rel="stylesheet" type="text/css" href="css/material.css">
 	<link rel="stylesheet" type="text/css" href="css/material.icon.css">
+	<link rel="stylesheet" type="text/css" href="css/material.min.purple.css">
+	<link rel="manifest" href="manifest.json">
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript" src="js/material.js"></script>
 </head>

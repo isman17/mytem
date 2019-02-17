@@ -1,0 +1,47 @@
+{
+  "name": "MyTemApp",
+  "short_name": "MyTem",
+  "theme_color": "#9c27b0",
+  "background_color": "#9c27b0",
+  "display": "standalone",
+  "Scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+        "src": "v2/img/android-chrome-192x192.png",
+        "type": "image/png",
+        "sizes": "48x48"
+    },
+    {
+        "src": "v2/img/android-chrome-512x512.png",
+        "type": "image/png",
+        "sizes": "96x96"
+    },
+    {
+        "src": "v2/img/apple-touch-icon.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "v2/img/favicon-16x16.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "v2/img/favicon-32x32.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "v2/img/mstile-150x150.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    },
+    {
+        "src": "v2/img/safari-pinned-tab.png",
+        "type": "image/png",
+        "sizes": "192x192"
+    }
+  ],
+  "splash_pages": null
+}

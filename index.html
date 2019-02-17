@@ -1,8 +1,13 @@
-<head><meta name="viewport" content="width=device-width, initial-scale=1, maximal-scale=1">
-
-<link rel="stylesheet" type="text/css" href="css/material.min.purple.css">
-<link rel="stylesheet" type="text/css" href="css/material.icon.css">
-<link rel="stylesheet" type="text/css" href="css/index.css">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="msapplication-TileColor" content="#9C27B0">
+    <meta name="theme-color" content="#9C27B0">
+    <title>MyTem</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="v2/img/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="v2/img/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="v2/img/favicon-16x16.png">
+	<link rel="manifest" href="manifest.json">
+	<link rel="mask-icon" href="v2/img/safari-pinned-tab.svg" color="#5bbad5">
 </head>
 <style type="text/css">
 	#v1{
@@ -40,3 +45,12 @@
 	</div>
 	<div class="mdl-layout-spacer"></div>
 </div>	
+<script async>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('mytem.js').then(function(sw){
+          console.log("Hi ", sw.scope);
+        }).catch(function(err){
+          console.log(err);
+        });
+      }
+</script>
